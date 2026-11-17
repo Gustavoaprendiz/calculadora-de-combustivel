@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="principal">
+
+        <div class="i">
+            <img src="img.posto.jpg" width="400" alt="">
+        </div>
+        <div class="conteudo">
+            <H1>qual combustivel e melhor</H1>
+            <p>preencha os campos e veja qual e <br> o  mais vantajoso.</p>
+            <form onsubmit="verificarCombustivel(event)">
+                <label for="gasolina">valor do litro da gasolina</label><br>
+                <input type="number" step="0.01" id="gasolina" required><br>
+                <label for="etanol">valor do litro da gasolina</label><br>
+                <input type="number" step="0.01" id="etanol" required><br>
+                <button type="submit">calcular</button>
+            </form>
+            <div id="resposta"></div>
+           <!-- <h2>abasteça com gasolina</h2>-->
+        </div>
+        <div class="rodape">
+            <p>desenvolvido por dev gostavo</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
